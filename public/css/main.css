@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.border {
+    border: 50px solid orange;
+}
+
+.active {
+    font-size: 2rem;
+    color: green
+}

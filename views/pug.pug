@@ -1,0 +1,28 @@
+extends layouts/pug-layout.pug
+
+block content
+    header
+        h1 Hey! #{name}
+    main
+        p This is the worst design ever, made with Pug
+        .yellow-bg.border
+            a(href="/", class=(isActive && 'active')) Home
+
+        img(src="https://picsum.photos/200/300", alt="Random image")
+
+        ul
+            if list.length > 0
+                each item in list
+                    div.border
+                        p #{item}
+                        p= item
+            else
+                p No items to show
+
+            if emptyList.length > 0 
+                p there are items
+            else
+                p No items to show
+
+    footer
+        p This is a footer

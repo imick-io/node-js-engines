@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+  <body>
+    <h1><%= pageTitle %></h1>
+    <p>This is a raw HTML file from Node with EJS.</p>
+
+    <div>
+      <% if(ifReturnsTrue) { %>
+      <div>You should see this</div>
+      <% } %>
+    </div>
+
+    <div>
+      <% if(ifReturnsFalse) { %>
+      <div>You should not see this</div>
+      <% } %>
+    </div>
+
+    <ul>
+      <% items.forEach((item) => { %>
+      <li><%= item.title %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
